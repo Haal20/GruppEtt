@@ -22,7 +22,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             text-align: center;
             margin: 0em 1em;
             padding: 0em 1em;
@@ -30,15 +30,24 @@
             width: 100%;
             background-color: white;
         }
-        img {
+        a > img {
             margin:5px;
-            border-radius: 5px;
-            width: 20%;
+            border-radius: 200px;
+            width: 70%;
+            opacity: 0.7;
+        }
+        img:hover{
+            transform: scale(1  1.1);
+            transition: scale 3s ease;
+            transition: opacity 0.5s ease-in-out;
+            border: 3px dotted orangered;
+            opacity: 1;
         }
         ul {
             text-align: left;
             margin: 10px;
-            list-style: none;
+            list-style: inside;
+            line-height: 1.5em;
         }
         hr {
             width: 100%;
@@ -48,6 +57,19 @@
         h1 {
             margin: 1rem;
         }
+        a {
+            text-decoration: none;
+            color: dodgerblue;
+        }
+        a:hover{
+            color: orangered;
+            transition: color 0.3s ease-in-out;
+        }
+        .links{
+            margin-bottom: 1em;
+            padding: 1em;
+        }
+        
 
         
     </style>
@@ -57,18 +79,23 @@
     <div class="container">
         <h1>Nandan Tyagi</h1>
         <hr>
-        <img src="https://avatars2.githubusercontent.com/u/57676863?s=460&u=a2af4518cd0c5abe50ab9dbd6c3bb3dfa6e102de&v=4" alt="Bild på Stockholm stad" >
+        <a href="https://github.com/NandanTyagi"><img src="https://avatars2.githubusercontent.com/u/57676863?s=460&u=a2af4518cd0c5abe50ab9dbd6c3bb3dfa6e102de&v=4" alt="Bild på Nandan" ></a>
         <hr>
-
+        <div>
+            <h3>Jag gillar att:</h3>
         <ul>
             <li>Umgås med familjen</li>
-            <li>Programmering</li>
-            <li>Tennis</li>
+            <li>Programmera</li>
+            <li>Spela tennis</li>
             <li>Lyssna på ljudböcker</li>
-            <li>Lära mig nya saker</li>
+            <li>Lära sig nya saker!</li>
         </ul>
-        <p><a href="https://nandantyagi.github.io">Nandan's Github sida</a></p>
-        <p><a href="index.html">Tillbaka till teamets sida</a></p>
+        </div>
+        <div class="links">
+            <p><a href="https://github.com/NandanTyagi" target="_blank">Nandan's Github sida</a></p>
+            <p><a href="/index.html">Tillbaka till teamets sida</a></p>
+        </div>
+        <br>
     </div>
 </body>
 </html>
